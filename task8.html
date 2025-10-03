@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Blog</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    /* General */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .blog-heading {
+      font-weight: 700;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    /* Card styling */
+    .blog-card {
+      border: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .blog-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    /* Custom button */
+    .btn-custom {
+      background-color: #0d6efd;
+      color: #fff;
+      font-weight: 500;
+      border-radius: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #084298;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 2px solid #444;
+    }
+
+    .social-icon {
+      font-size: 1.3rem;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .social-icon:hover {
+      color: #0d6efd;
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">My Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+              data-bs-target="#navbarNav" aria-controls="navbarNav" 
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Blog Section -->
+  <div class="container my-5">
+    <h1 class="text-center mb-4 blog-heading">Latest Posts</h1>
+    <div class="row g-4">
+      
+      <!-- Card 1 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm blog-card">
+          <img src="C:\Users\Administrator\Pictures\Screenshots\Screenshot 2025-06-21 231102.png" class="card-img-top" alt="Blog 1">
+          <div class="card-body">
+            <h5 class="card-title">Blog Post One</h5>
+            <p class="card-text">This is a short description of the blog post. It gives a quick overview of the content.</p>
+            <a href="#" class="btn btn-custom">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm blog-card">
+          <img src=  class="card-img-top" alt="Blog 2">
+          <div class="card-body">
+            <h5 class="card-title">Blog Post Two</h5>
+            <p class="card-text">Another exciting post description goes here. Engaging summary for the readers.</p>
+            <a href="#" class="btn btn-custom">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm blog-card">
+          <img src="https://via.placeholder.com/600x300" class="card-img-top" alt="Blog 3">
+          <div class="card-body">
+            <h5 class="card-title">Blog Post Three</h5>
+            <p class="card-text">Here’s some text about the third blog post. Keep it catchy and informative.</p>
+            <a href="#" class="btn btn-custom">Read More</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-light text-center py-3">
+    <div class="container">
+      <p class="mb-2">© 2025 My Blog | All rights reserved</p>
+      <a href="#" class="text-light mx-2 social-icon"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-light mx-2 social-icon"><i class="bi bi-twitter"></i></a>
+      <a href="#" class="text-light mx-2 social-icon"><i class="bi bi-instagram"></i></a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
